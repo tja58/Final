@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>4LIFE</title>
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="styles/style.css">
+    
+
+</head>
+<body>
+    <header id="titleContainer">
+        <span id="title">4LIFE</span>
+    </header>
+    <div id="contentContainer">
+        <section id="spotify" class="container">
+            <center>
+            <section id="sectionHeader">
+            <span id="spotifyLabel">Spotify</span>
+
+            <label for="user">Please enter your Spotify username</label>
+            <input type="text" id="user"></input>
+            <input type="submit" id="submit"></input>
+            </center>
+            <div id="embed"></div>
+            <div id="playlists"></div>
+        </section>
+        <section id="notes" class="container">
+            <div class="HContainer">
+                <span id="notesHeader">Notes</span>
+            </div>
+            <div class="popup-box">
+                <div class="popup">
+                  <div class="content">
+                    <header>
+                      <p></p>
+                      <i class="uil uil-times"></i>
+                    </header>
+                    <form action="#">
+                      <div class="row title">
+                        <label>Title</label>
+                        <input type="text" spellcheck="false">
+                      </div>
+                      <div class="row description">
+                        <label>Description</label>
+                        <textarea spellcheck="false"></textarea>
+                      </div>
+                      <button></button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="wrapper">
+                <li class="add-box">
+                  <div class="icon"><i class="uil uil-plus"></i></div>
+                  <p>Add new note</p>
+                </li>
+              </div>
+        </section>
+        <section id="youtube" class="container">
+            <div class="HContainer">
+                <span id="youtubeHeader">Youtube</span>
+            </div>
+            <div id="searchContainer">
+                <form id="searchForm" onsubmit="event.preventDefault();">
+                    <label id="searchLabel" for="search">Search for stuff</label>
+                    <input id="searchBar" type="search" placeholder="Search youtuber..." autofocus required />
+                    <button id="sbmBtn" type="submit">Go</button>    
+                  </form>
+            </div>
+            <div id="ytcontent">
+                <div id="ytprofile">
+                    <a href="" id="logoLink">
+                        <img id="logo" src="/images/youtube.png" alt="Youtube logo">
+                    </a>
+                </div>
+                <div id="recentVideos">
+
+                    <div id="ruTitle">
+                        <span id="ru">Recent Uploads</span>
+                    </div>
+
+                    <div id="rcVd">
+                        <a href="" id="rc1Link" class="link">
+                            <div class="rc">
+                                <img class="rcimg" id="rc1" src="images/youtube.png" alt="">
+                                <p class="rctxt" id="rctxt1">Recent uploads by creator</p>
+                            </div>
+                        </a>
+                        <a href="" id="rc2Link" class="link">
+                            <div class="rc">
+                                <img class="rcimg" id="rc2" src="images/youtube.png" alt="">
+                                <p class="rctxt" id="rctxt2">Recent uploads by creator</p>
+                            </div>
+                        </a>
+                        <a href="" id="rc3Link" class="link">
+                            <div class="rc">
+                                <img class="rcimg" id="rc3" src="images/youtube.png" alt="">
+                                <p class="rctxt" id="rctxt3">Recent uploads by creator</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div id="stats">
+                    <div id="statsTitle">
+                        <span>Channel Description</span>
+                    </div>
+                    
+                    <div id="statsContainer">
+                        <div id="box">
+                            <span id="creatorLabel">Creator: </span>
+                            <span id="creator"></span>
+                            <span id="descLabel">Channel description:</span>
+                            <span id="desc"></span>
+                            <span id="subsLabel">Subscribers: </span>
+                            <span id="subs"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <footer>
+
+    </footer>
+
+    <script src="scriptMain.js" type="module"></script>
+    
+</body>
+</html>
